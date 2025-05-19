@@ -29,7 +29,7 @@
 1. Clone the repository
 ```bash
 git clone https://github.com/ibadrehman90/thrive-data-engineer.git
-cd thrive-task
+cd thrive-data-task
 ```
 
 2. Install dependencies
