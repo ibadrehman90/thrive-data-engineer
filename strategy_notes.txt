@@ -1,0 +1,47 @@
+1. create a consolidated_messages table from these three tables.
+
+2. For the consolidated_messages table, create three fact/dim schemata:
+    1. fact table schema
+    2. user dimension table schema
+    3. conversation_parts dimension table schema.
+
+Fact Table:
+
+- consolidated_messages
+- id (PK)
+- user_id (customer)
+- email (sender)
+- conversation_id
+- message
+- message_type
+- created_at
+
+Dimension Tables:
+
+dim_users
+
+- user_id (PK)
+- email
+- name
+- is_customer
+
+dim_conversation_parts
+
+- part_id (PK)
+- conversation_id
+- email
+- part_type
+- message
+- created_at
+
+** Resultant consolidated_messages table
+
+- id
+- user_id
+- email
+- conversation_id
+- message
+- message_type
+- created_at
+
+
